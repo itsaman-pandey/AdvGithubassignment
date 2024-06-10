@@ -37,39 +37,358 @@
         .space-x-8 > *:not(:last-child) {
           margin-right: 2rem;
         }
- <style>
-      .bg-blue-600 {
-        background-color: #2563eb;
-      }
-      .mx-28 {
-        margin-left: 7rem;
-        margin-right: 7rem;
-      }
-      .h-24 {
-        height: 6rem;
-      }
-      .flex {
-        display: flex;
-      }
-      .justify-between {
-        justify-content: space-between;
-      }
-      .flex-wrap {
-        flex-wrap: wrap;
-      }
-      .text-white {
-        color: white;
-      }
-      .font-semibold {
-        font-weight: 600;
-      }
-      .text-lg {
-        font-size: 1.125rem;
-      }
-      .space-x-8 > *:not(:last-child) {
-        margin-right: 2rem;
-      }
-</style>
+        .section-container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+  
+        .image-container img {
+          max-width: 100%;
+          height: auto;
+        }
+  
+        .text-container {
+          max-width: 50%;
+          text-align: left;
+        }
+  
+        .title {
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 1rem;
+        }
+  
+        .description {
+          font-size: 1.25rem;
+          margin-bottom: 2rem;
+        }
+  
+        .download-buttons {
+          display: flex;
+          gap: 1rem;
+          margin-bottom: 2rem;
+        }
+  
+        .download-button {
+          display: flex;
+          align-items: center;
+          padding: 1rem;
+          border: 1px solid white;
+          border-radius: 0.5rem;
+          cursor: pointer;
+        }
+  
+        .download-button img {
+          width: 2rem;
+          height: 2rem;
+          margin-right: 1rem;
+        }
+  
+        .statistics {
+          display: flex;
+          gap: 2rem;
+        }
+  
+        .stat-item {
+          text-align: center;
+        }
+  
+        .stat-item h2 {
+          font-size: 2rem;
+          font-weight: 700;
+          margin-bottom: 0.5rem;
+        }
+  
+        .stat-item p {
+          font-size: 1rem;
+        }
+        .features-section {
+      padding: 4rem 2rem;
+      background-color: #ffffff;
+      text-align: center;
+  }
+  
+  .features-header {
+      margin-bottom: 3rem;
+  }
+  
+  .features-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+  }
+  
+  .features-subtitle {
+      font-size: 1.25rem;
+      color: #6c757d;
+  }
+  
+  .features-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+  }
+  
+  .feature-item {
+      flex: 1 1 calc(25% - 2rem);
+      max-width: calc(25% - 2rem);
+      background-color: #ffffff;
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  
+  .feature-item img {
+      width: 3rem;
+      height: 3rem;
+      margin-bottom: 1rem;
+  }
+  
+  .feature-item h2 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+  }
+  
+  .feature-item p {
+      font-size: 1rem;
+      color: #6c757d;
+  }
+  .container {
+      text-align: center;
+      padding: 20px;
+  }
+  
+  h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+  }
+  
+  p {
+      font-size: 18px;
+      color: #777;
+  }
+  
+  .profiles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .profile-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s;
+      width: 200px;
+  }
+  
+  .profile-card img {
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+  }
+  
+  .profile-card h2 {
+      font-size: 24px;
+      margin: 10px 0;
+  }
+  
+  .profile-card p {
+      font-size: 16px;
+      color: #555;
+  }
+  
+  .profile-card button {
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+      padding: 10px 20px;
+      transition: background-color 0.2s;
+  }
+  
+  .profile-card button:hover {
+      background-color: #0056b3;
+  }
+  
+  .profile-card:hover {
+      transform: scale(1.1);
+  }
+  .testimonials-section {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      max-width: 100%;
+      margin: 40px auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #333;
+  }
+  
+  p {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 30px;
+  }
+  
+  .testimonials {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .testimonial-card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin: 10px;
+      padding: 20px;
+      text-align: left;
+      width: 300px;
+      transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .testimonial-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .stars {
+      color: #ffcc00;
+      font-size: 20px;
+      margin-bottom: 10px;
+  }
+  
+  h2 {
+      font-size: 22px;
+      color: #333;
+      margin-bottom: 10px;
+  }
+  
+  .testimonial-card p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 10px;
+  }
+  
+  .author {
+      font-size: 14px;
+      color: #888;
+  }
+  .cta-section {
+      background: linear-gradient(135deg, #4a90e2 0%, #0052cc 100%);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+  }
+  
+  .cta-section h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+  }
+  
+  .cta-section p {
+      font-size: 18px;
+      margin-bottom: 40px;
+  }
+  
+  .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+  }
+  
+  .cta-button {
+      padding: 15px 30px;
+      border: 2px solid white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 16px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s, color 0.3s;
+  }
+  
+  .ios-button {
+      background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .android-button {
+      background: rgba(255, 255, 255, 0.2);
+  }
+  
+  .cta-button:hover {
+      background: white;
+      color: #0052cc;
+  }
+  
+  footer {
+      background-color: #f4f4f4;
+      padding: 30px 20px;
+      text-align: center;
+  }
+  
+  .footer-social {
+      margin-bottom: 20px;
+  }
+  
+  .footer-social span {
+      font-size: 16px;
+      color: #666;
+      margin-right: 10px;
+  }
+  
+  .footer-social a img {
+      width: 24px;
+      margin: 0 5px;
+      filter: grayscale(100%);
+      transition: filter 0.3s;
+  }
+  
+  .footer-social a img:hover {
+      filter: none;
+  }
+  
+  .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+  }
+  
+  .footer-links a {
+      color: #666;
+      font-size: 14px;
+      text-decoration: none;
+      transition: color 0.3s;
+  }
+  
+  .footer-links a:hover {
+      color: #0052cc;
+  }
+      </style>
 </head>
 <body class="bg-blue-600">
     <div class="mx-28 h-24 flex justify-between items-center flex-wrap">
@@ -86,6 +405,212 @@
         <div>English</div>
       </div>
     </div>
+    <div class="flex flex-row flex-wrap section-container mx-28">
+      <div class="w-1/2 image-container">
+        <img
+          src="https://ali-global-cdn.hellotalk8.com/www/image/hellotalk-phone-header.png?ver=0.1.0&x-oss-process=image/format,webp,image/resize,w_750"
+          alt="HelloTalk Phone Image"
+        />
+      </div>
+      <div class="mt-5  text-container text-white">
+        <h1 class="title text-white">Talk to the World</h1>
+        <p class="description text-white">
+          Learn a language for free by chatting with native speakers around the
+          world!
+        </p>
+        <div class="download-buttons ">
+          <div class="download-button ios">
+            <img
+              src=""
+              alt="iOS"
+            />
+            <p>Download the iOS app</p>
+          </div>
+          <div class="download-button android">
+            <img
+              src=""
+              alt="Android"
+            />
+            <p>Download the Android app</p>
+          </div>
+        </div>
+        <div class="statistics ">
+          <div class="stat-item ">
+            <h2 class=" text-white">150+</h2>
+            <p  class=" text-white">Languages supported</p>
+          </div>
+          <div class="stat-item">
+            <h2 class ="text-white">50+ million</h2>
+            <p  class ="text-white">Members to chat with</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="features-section">
+      <div class="features-header">
+        <h1 class="features-title">The Ultimate Language Exchange</h1>
+        <p class="features-subtitle">
+          Learn a language, explore new cultures, and make friends around the
+          world
+        </p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <img
+            src="https://ali-global-cdn.hellotalk8.com/wp-content/uploads/2017/07/worldwide-icon.svg"
+            alt="Worldwide Community"
+          />
+          <h2>Worldwide Community</h2>
+          <p>
+            Native speakers teach you their language, while you teach them
+            yours. Millions of people use HelloTalk to practice 150+ languages.
+          </p>
+        </div>
+        <div class="feature-item">
+          <img
+            src="https://ali-global-cdn.hellotalk8.com/wp-content/uploads/2017/07/text-voice-video-icon.svg"
+            alt="Text, Voice, Video, and More"
+          />
+          <h2>Text, Voice, Video, and More</h2>
+          <p>
+            Chat with language partners through text and voice messages,
+            stickers, voice and video calls, and interactive Voicerooms and
+            Lives. Whatever your communication preference, choose the method
+            that best fits your learning goals!
+          </p>
+        </div>
+        <div class="feature-item">
+          <img
+            src="https://ali-global-cdn.hellotalk8.com/wp-content/uploads/2017/07/translation-icon.svg"
+            alt="Intuitive Language Tools"
+          />
+          <h2>Intuitive Language Tools</h2>
+          <p>
+            Built-in aids for translation, pronunciation, transliteration, and
+            corrections make conversations run smoothly. Learning is as simple
+            as chatting!
+          </p>
+        </div>
+        <div class="feature-item">
+          <img
+            src="https://ali-global-cdn.hellotalk8.com/wp-content/uploads/2017/07/public-icon.svg"
+            alt="Moments"
+          />
+          <h2>Moments</h2>
+          <p>
+            Engage with the entire community by posting Moments. The public
+            posts are seen by all native speakers of your target language and
+            are ideal for asking questions and sharing updates.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <h1 class="text-white font-bold text-xlg" >Language Exchange</h1>
+        <p  class="text-white">Find the perfect language partner</p>
+        <div class="profiles">
+            <div class="profile-card">
+                <img src="https://img.icons8.com/?size=100&id=33288&format=png&color=000000" alt="South Korea">
+                <h2>이수채</h2>
+                <p>Wants to learn: English</p>
+                <p>Can teach: 한국어</p>
+                <button>Start Chatting</button>
+            </div>
+            <div class="profile-card">
+                <img src="https://img.icons8.com/?size=100&id=hTMPE6ntTofO&format=png&color=000000" alt="Germany">
+                <h2>Elias</h2>
+                <p>Wants to learn: 中文</p>
+                <p>Can teach: Deutsch</p>
+                <button>Start Chatting</button>
+            </div>
+            <div class="profile-card">
+                <img src="https://img.icons8.com/?size=100&id=3muzEmi4dpD5&format=png&color=000000" alt="France">
+                <h2>Rose</h2>
+                <p>Wants to learn: Русский язык</p>
+                <p>Can teach: Français</p>
+                <button>Start Chatting</button>
+            </div>
+            <div class="profile-card">
+                <img src="https://img.icons8.com/?size=100&id=ly7tzANRt33n&format=png&color=000000" alt="Spain">
+                <h2>Leon</h2>
+                <p>Wants to learn: 日本語</p>
+                <p>Can teach: Español</p>
+                <button>Start Chatting</button>
+            </div>
+            <div class="profile-card">
+                <img src="https://img.icons8.com/?size=100&id=Ej50Oe3crXwF&format=png&color=000000" alt="China">
+                <h2>强明</h2>
+                <p>Wants to learn: Deutsch</p>
+                <p>Can teach: 中文</p>
+                <button>Start Chatting</button>
+            </div>
+            <div class="profile-card">
+                <img src="https://img.icons8.com/?size=100&id=15532&format=png&color=000000" alt="USA">
+                <h2>Amy</h2>
+                <p>Wants to learn: 한국어</p>
+                <p>Can teach: English</p>
+                <button>Start Chatting</button>
+            </div>
+            <div class="profile-card">
+                <img src="https://img.icons8.com/?size=100&id=15528&format=png&color=000000g" alt="Russia">
+                <h2>Константин</h2>
+                <p>Wants to learn: Français</p>
+                <p>Can teach: Русский язык</p>
+                <button>Start Chatting</button>
+            </div>
+            <div class="profile-card">
+                <img src="https://img.icons8.com/?size=100&id=22435&format=png&color=000000" alt="Japan">
+                <h2>桜子</h2>
+                <p>Wants to learn: English</p>
+                <p>Can teach: 日本語</p>
+                <button>Start Chatting</button>
+            </div>
+        </div>
+    </div>
+    <div class="testimonials-section">
+        <h1>What People are Saying</h1>
+        <p>It's never been this fun to learn languages. Millions of happy HelloTalk members agree!</p>
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <h2>Learned a lot</h2>
+                <p>I'm surprised at how friendly people are and how they genuinely are interested in learning and meeting new friends.</p>
+                <p class="author">by Kris__001 via the App Store</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <h2>Amazing app</h2>
+                <p>Getting to talk to people in the language that I'm learning makes a big difference! They are so nice and I'm helping them learn English.</p>
+                <p class="author">by AF_Chic via the App Store</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <h2>Addictive in the best way</h2>
+                <p>I never imagined how much I'd be hooked on HelloTalk. I post in Spanish and get edits/comments instantly from native speakers!</p>
+                <p class="author">by Dallascar2018 via the App Store</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <h2>Great app</h2>
+                <p>You get to read lots of posts written by different people with different backgrounds. I enjoy reading, replying and helping people.</p>
+                <p class="author">by Kuanyu1993 via the App Store</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <h2>Social learning network</h2>
+                <p>The interface is really responsive and has a lot of cool features like bookmarking your favourite messages.</p>
+                <p class="author">by PB's Boys via the App Store</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <h2>Great place to make friends!</h2>
+                <p>I've been using this app for a week now and I love it! I'm there to practice my Korean and people are very helpful in correcting me.</p>
+                <p class="author">by Great game xD via the App Store</p>
+            </div>
+        </div>
+    </div>
+
+
     </body>
 
   </html>
